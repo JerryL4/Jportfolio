@@ -1,0 +1,442 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #2c3e50; /* Dark blue background for the whole page */
+  color: #ecf0f1; /* Light text color (off-white) for readability */
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #1abc9c; /* Light greenish color for the header (navbar style) */
+  padding: 20px;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.header .profile-img img {
+  display: block;
+  width: 120px;
+  margin: 15px auto;
+  border: 3px solid #16a085; /* Slightly darker green border */
+  border-radius: 50%;
+}
+
+.header .logo h1 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 700;
+  color: #ecf0f1; /* Light text color for the logo */
+  text-align: center;
+}
+
+.navmenu {
+  margin-top: 30px;
+}
+
+.navmenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navmenu .nav-link {
+  color: #ecf0f1; /* Light color for navbar links */
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navmenu .nav-link:hover {
+  background-color: #16a085; /* Darker green for hover */
+  color: #2c3e50; /* Dark blue text on hover */
+}
+
+hr {
+  border: none;
+  height: 10px;
+  background-color: #16a085; /* Dark green for divider */
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.about-section {
+  max-width: 1500px;
+  margin: 0 auto;
+  background: #34495e; /* Dark grayish-blue for about section */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+#content {
+  margin-left: 250px;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #34495e; /* Dark grayish-blue background */
+  color: #ecf0f1; /* Light text for content */
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h1, h2 {
+  color: #ecf0f1; /* Light color for headings */
+  font-weight: bold;
+}
+
+.container {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .progress-container h2 {
+  margin-left: 10px;
+  letter-spacing: 0.5px;
+}
+
+.progress-bar {
+  background: #16a085; /* Greenish color for progress bar */
+  width: 100%;
+  height: 30px;
+  border-radius: 30px;
+  box-shadow: 3px 4px 5px 0px rgba(204, 185, 185, 0.75);
+}
+
+.container .progress-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #ecf0f1; /* Light text inside the progress container */
+  font-weight: 800;
+  line-height: 1.7;
+}
+
+span {
+  background: #2ecc71; /* Lighter green for span */
+}
+
+.slideshow-container {
+  position: relative;
+  background: #2c3e50; /* Dark blue background for slideshow */
+}
+
+.mySlides {
+  display: none;
+  padding: 50px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #ecf0f1; /* Light color for arrows */
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #2c3e50; /* Dark blue text on hover */
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #ecf0f1; /* Light color for dots */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots {
+  text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #16a085; /* Darker green for active dots */
+}
+
+q {
+  font-style: italic;
+}
+
+.author {
+  color: #ecf0f1; /* Light color for the author */
+}
+
+.container-resume {
+  max-width: 1500px;
+  margin: 0 auto;
+  background: #34495e; /* Dark grayish-blue for resume section */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+hr.divider {
+  border: none;
+  height: 3px;
+  background-color: #16a085; /* Dark green divider */
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  color: #ecf0f1; /* Light text color for job titles */
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+.job p {
+  font-size: 0.9em;
+  color: #ecf0f1; /* Light text for job descriptions */
+}
+
+.job ul {
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.job ul li {
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.skills li {
+  background: #1abc9c; /* Same green for skills */
+  color: #2c3e50; /* Dark blue text for skills */
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.education-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.education-item {
+  flex: 1;
+  cursor: pointer;
+  padding: 20px;
+  background-color: #34495e; /* Dark gray background for education items */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+  transform: scale(1.05);
+  background-color: #16a085; /* Dark green on hover */
+}
+
+.education-item h3 {
+  font-size: 1.2em;
+  margin: 0;
+  color: #ecf0f1; /* Light text for education titles */
+}
+
+.education-item p {
+  margin-top: 10px;
+  color: #ecf0f1; /* Light text for descriptions */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #34495e; /* Dark gray for modal content */
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px!important;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  border-bottom: 1px solid #16a085; /* Green line at the top */
+  padding-bottom: 10px;
+}
+
+.modal-title {
+  font-size: 1.5em;
+  color: #ecf0f1; /* Light text color for modal title */
+}
+
+.modal-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-body li {
+  margin-bottom: 10px;
+  color: #ecf0f1; /* Light text color inside modal body */
+}
+
+.close {
+  color: #ecf0f1; /* Light color for the close button */
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.close:hover {
+  color: #85b082; /* Light green hover effect */
+}
+
+#portfolio, #services {
+  margin-bottom: 50px; /* Add space between sections */
+}
+
+#portfolio {
+  background-color: #34495e; /* Dark grayish-blue for portfolio section */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.portfolio-item {
+  margin-bottom: 20px;
+  background: #2c3e50; /* Darker background for portfolio items */
+  padding: 15px;
+  border-radius: 8px;
+  color: #ecf0f1; /* Light text for portfolio items */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+  background-color: #16a085; /* Dark green for portfolio hover */
+}
+/* Style the modal title */
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004d40; /* Dark Green */
+  text-align: center;
+}
+
+/* Style the modal description */
+#project-description {
+  font-size: 1rem;
+  color: #0e0d0d;
+  line-height: 1.6;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+/* Optional: Style the image inside the modal */
+#project-image {
+  border-radius: 8px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Adjust the close button appearance */
+.modal-header .btn-close {
+  background-color: #0a0a0a;
+  border-radius: 50%;
+}
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+footer .container {
+  max-width: 1200px; /* Optional: limits the width of the content */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 0 20px; /* Adds padding around the container */
+  text-align: center; /* Centers all text and inline elements inside the container */
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centers the social media icons */
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links li a {
+  font-size: 18px;
+}
+.trail {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 5;
+  }
+  100% {
+      opacity: 0;
+      transform: scale(0);
+  }
+}
